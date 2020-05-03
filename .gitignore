@@ -14,7 +14,8 @@ Session.vim
 *.iml
 *.ipr
 *.iws
-.idea
+guest-app/.idea
+guest-services/.idea
 *plugin.xml
 
 # Eclipse generated files
@@ -56,7 +57,8 @@ mysql-embedded
 # Maven generated files
 *.releaseBackup
 release.properties
-target/
+guest-services/target/
+guest-app/target/
 
 # OS generated files
 *.pid
@@ -85,3 +87,14 @@ MANIFEST.MF
 /bin/
 journal/
 snapshots/
+
+guest-app/MANIFEST.MF
+guest-app/bin/
+guest-app/journal/
+guest-app/snapshots/
+
+guest-services/MANIFEST.MF
+guest-services/bin/
+guest-services/journal/
+guest-services/snapshots/
+

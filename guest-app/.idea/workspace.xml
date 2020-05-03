@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef3c821b-ca82-4119-ab03-92663b7e02a2" name="Default Changelist" comment="" />
+    <list default="true" id="ef3c821b-ca82-4119-ab03-92663b7e02a2" name="Default Changelist" comment="Adding new behaviours to services">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+    </list>
+    <list id="f626348f-4cb7-4461-a7d2-70368933b90d" name="Adding new behaviours to services" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/guest-app.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/model/GuestModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/model/GuestModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/AdminUserDelegateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/AdminUserDelegateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/GuestDelegateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/GuestDelegateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/impl/AdminUserDelegateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/impl/AdminUserDelegateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/impl/GuestDelegateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/delegate/service/impl/GuestDelegateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/controller/AdminUserConroller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/controller/GuestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/controller/GuestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/crypto/PasswordEncode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/crypto/PasswordEncode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/model/dto/AdminUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/model/dto/AdminUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/GroupRepository$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/GroupRepository$GroupContextMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/GroupRepository$GroupContextMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/GroupRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/GroupRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/PersonRepository$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/PersonRepository$PersonContextMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/PersonRepository$PersonContextMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/repository/PersonRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/AdminUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/AdminUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/GuestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/GuestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/AdminUserServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/AdminUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/AdminUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/GuestServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/GuestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/GuestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/PostConstruct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkoyuncuoglu/security/app/domain/service/impl/PostConstruct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/guest-app.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mkoyuncuoglu/security/app/GuestAppApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mkoyuncuoglu/security/app/Tests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mkoyuncuoglu/security/app/Tests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/META-INF/guest-services.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/GuestServicesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/GuestServicesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/controller/GuestServicesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/controller/GuestServicesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/exception/GuestNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/exception/GuestNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/model/AdminModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/model/AdminModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/model/GuestModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/model/GuestModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/service/impl/GuestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../guest-services/target/classes/com/mkoyuncuoglu/security/services/domain/service/impl/GuestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guest-services/target/test-classes/META-INF/guest-services.kotlin_module" beforeDir="false" />
+    </list>
     <list id="0240b6fe-2c09-484b-9e39-0392527f49aa" name="intellij" comment="" />
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/../guest-services/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,104 +67,20 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/PersonRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/AdminUserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindBugs-IDEA-Workspace">
     <toolWindowGroupBy>BugRank</toolWindowGroupBy>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>username</find>
-      <find>WriteTo</find>
-      <find>WriteToFile</find>
-      <find>id=</find>
-      <find>captcha</find>
-      <find>Captcha</find>
-      <find>baseLdapPath</find>
-      <find>UNIQUEMEMBER</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/check.js" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/repository/AdminRepository.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/service/AdminServicesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/config/ApplicationSecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/IAdminUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/config/LdapConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/PostConstruct.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/model/AdminModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/model/AdminModel.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/controller/AdminUserConroller.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/guests-view.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/IGuestService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/model/GuestModel.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/service/GuestServicesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/domain/AdminUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/finartz/security/app/Tests.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/model/GuestModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/domain/Group.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/test/java/com/finartz/security/services/TestMongo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin-view.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/controller/GuestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admins-view.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/guest-view.html" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/AdminUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/AdminUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/GroupRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/domain/Guest.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/Guest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/GuestAppApplication.java" />
-        <option value="$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/repository/GuestRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/GuestService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/crypto/PasswordEncode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/PersonRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/captcha/ReCaptchaResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/GuestServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/AdminUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/AdminUserRepository.java" />
-      </list>
-    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -134,24 +88,8 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectId" id="1bNACyAnzj3oNUTLzIaIxnQjArC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -159,15 +97,25 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mkoyuncuoglu/security/app/domain/model/ldap" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Belgelerim\Intellij Workspace\finartz\SpringCrudOperations\guest-app\src\main\java\com\mkoyuncuoglu\security\app\domain\model\ldap" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mkoyuncuoglu.security.app.domain.service.impl" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -186,124 +134,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestMongo.testFindOne">
-    <configuration name="TestMongo.testAddGuest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guest-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.finartz.security.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.finartz.security.services" />
-      <option name="MAIN_CLASS_NAME" value="com.finartz.security.services.TestMongo" />
-      <option name="METHOD_NAME" value="testAddGuest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMongo.testDeleteUsingObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guest-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.finartz.security.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.finartz.security.services" />
-      <option name="MAIN_CLASS_NAME" value="com.finartz.security.services.TestMongo" />
-      <option name="METHOD_NAME" value="testDeleteUsingObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMongo.testFindOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guest-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.finartz.security.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.finartz.security.services" />
-      <option name="MAIN_CLASS_NAME" value="com.finartz.security.services.TestMongo" />
-      <option name="METHOD_NAME" value="testFindOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMongo.test_GetAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guest-services" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.finartz.security.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.finartz.security.services" />
-      <option name="MAIN_CLASS_NAME" value="com.finartz.security.services.TestMongo" />
-      <option name="METHOD_NAME" value="test_GetAllUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.encryptPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guest-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.finartz.security.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.finartz.security.app" />
-      <option name="MAIN_CLASS_NAME" value="com.finartz.security.app.Tests" />
-      <option name="METHOD_NAME" value="encryptPasswordTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuestAppApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="guest-app" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkoyuncuoglu.security.app.GuestAppApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.GuestAppApplication">
     <configuration name="GuestAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="guest-app" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.finartz.security.app.GuestAppApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuestServicesApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="guest-services" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkoyuncuoglu.security.services.GuestServicesApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkoyuncuoglu.security.app.GuestAppApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="GuestServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="guest-services" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.finartz.security.services.GuestServicesApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkoyuncuoglu.security.services.GuestServicesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestMongo.testFindOne" />
-        <item itemvalue="JUnit.TestMongo.testDeleteUsingObject" />
-        <item itemvalue="JUnit.TestMongo.testAddGuest" />
-        <item itemvalue="JUnit.TestMongo.test_GetAllUser" />
-        <item itemvalue="JUnit.Tests.encryptPasswordTest" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Spring Boot.GuestServicesApplication" />
+      <item itemvalue="Spring Boot.GuestAppApplication" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.15746753" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@76012b9e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@76012b9e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2aaccaf8" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\SaWLeaDeR\AppData\Roaming\Subversion</configuration>
@@ -312,6 +183,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="ef3c821b-ca82-4119-ab03-92663b7e02a2" name="Default Changelist" comment="" />
       <changelist id="0240b6fe-2c09-484b-9e39-0392527f49aa" name="intellij" comment="" />
+      <changelist id="f626348f-4cb7-4461-a7d2-70368933b90d" name="Adding new behaviours to services" comment="" />
       <created>1563978437328</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -324,6 +196,10 @@
       <workItem from="1564119083631" duration="5471000" />
       <workItem from="1564125032274" duration="182000" />
       <workItem from="1564125260601" duration="5147000" />
+      <workItem from="1588462055425" duration="506000" />
+      <workItem from="1588462586255" duration="757000" />
+      <workItem from="1588491952456" duration="11337000" />
+      <workItem from="1588508229777" duration="7562000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1564125577115</created>
@@ -388,7 +264,35 @@
       <option name="project" value="LOCAL" />
       <updated>1564130173873</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding new behaviours to services">
+      <created>1588515084978</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588515084978</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adding new behaviours to services">
+      <created>1588515348922</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588515348922</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding new behaviours to services">
+      <created>1588515403858</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588515403858</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create .gitignore">
+      <created>1588515521099</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588515521099</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -423,62 +327,6 @@
       <configuration name="TestMongo.testFindOne" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45300000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="SVN Repositories" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.312026" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Spring" order="8" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.28518122" side_tool="true" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="SonarLint" order="12" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="15" sideWeight="0.7148188" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Tail" order="17" />
-      <window_info anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.49840087" weight="0.30119178" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Codota" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -488,20 +336,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -513,433 +348,9 @@
     <MESSAGE value="intellij" />
     <MESSAGE value="fixup! fixup! intellij" />
     <MESSAGE value="fixup! intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixup! intellij" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="1004" column="32" selection-start-line="1004" selection-start-column="32" selection-end-line="1004" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/GuestServicesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.1.10.2.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/table.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/quotes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/service/AdminServicesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/config/LdapConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="96" column="27" lean-forward="true" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/model/AdminModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ldap/spring-ldap-core/2.3.2.RELEASE/spring-ldap-core-2.3.2.RELEASE-sources.jar!/org/springframework/ldap/core/LdapTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1014" column="16" selection-start-line="1014" selection-start-column="16" selection-end-line="1014" selection-end-column="16" />
-          <folding>
-            <element signature="e#31727#31728#0" expanded="true" />
-            <element signature="e#31746#31747#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/AdminUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/finartz/security/app/GuestAppApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/javax/naming/ldap/LdapName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
-          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/finartz/security/app/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-          <folding>
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/test/java/com/finartz/security/services/TestMongo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/guests-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="86" lean-forward="true" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admins-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/controller/GuestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1318#1319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/repository/AdminRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/domain/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/config/ApplicationSecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/finartz/security/app/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/domain/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/domain/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/GuestAppApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/ui/model/GuestModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/repository/GuestRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guest-services/src/main/java/com/finartz/security/services/service/GuestServicesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/crypto/PasswordEncode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/captcha/ReCaptchaResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/PostConstruct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/GuestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/GuestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/service/AdminUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/GroupRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="103" column="71" selection-start-line="103" selection-start-column="59" selection-end-line="103" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/model/AdminModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/model/GuestModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1692#1693#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1780#1781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/controller/AdminUserConroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/guest-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/PersonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/finartz/security/app/repository/AdminUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <MESSAGE value="Adding new behaviours to services" />
+    <MESSAGE value="Create .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create .gitignore" />
   </component>
   <component name="masterDetails">
     <states>
