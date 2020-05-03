@@ -1,34 +1,30 @@
 package com.mkoyuncuoglu.security.app.domain.controller;
 
-import com.mkoyuncuoglu.security.app.domain.model.dto.Guest;
 import com.mkoyuncuoglu.security.app.delegate.model.GuestModel;
-import com.mkoyuncuoglu.security.app.domain.service.impl.GuestServiceImpl;
-import org.apache.commons.codec.digest.DigestUtils;
-import org.bson.types.ObjectId;
-import org.springframework.http.HttpStatus;
+import com.mkoyuncuoglu.security.app.domain.service.GuestService;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.View;
-
-import javax.servlet.http.HttpServletRequest;
-import java.nio.charset.Charset;
-import java.util.Base64;
-import java.util.List;
 
 @Controller
 @RequestMapping("/")
 public class GuestController {
 
-    private static final String GUESTVIEW = "guest-view";
-    private static final String GUEST = "guest";
-    private final GuestServiceImpl guestServiceImpl;
+    private static final String GUEST_VIEW = "guest-view";
 
-    public GuestController(GuestServiceImpl guestServiceImpl) {
+    private final GuestService guestService;
+
+    public GuestController(GuestService guestService) {
         super();
-        this.guestServiceImpl = guestServiceImpl;
+        this.guestService = guestService;
     }
 
     @GetMapping(value = {"/", "/index"})
@@ -49,54 +45,37 @@ public class GuestController {
     @GetMapping(value = "/guests")
     @PreAuthorize("hasRole('ROLE_USER')")
     public String getGuests(Model model) {
-        List<Guest> guests = this.guestServiceImpl.getAllGuests();
-        model.addAttribute("guests", guests);
-        return "guests-view";
+        return guestService.getGuests(model);
     }
 
     @GetMapping(value = "/guests/add")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public String getAddGuestForm(Model model) {
-        return GUESTVIEW;
+        return GUEST_VIEW;
     }
 
     @PostMapping(value = "/guests")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView addGuest(HttpServletRequest request, Model model,
-                                 @ModelAttribute GuestModel guestModel) {
-        String hashedVal = Base64.getEncoder().encodeToString(DigestUtils.sha1(guestModel.getPassword().getBytes(Charset.forName("UTF-8"))));
-        hashedVal = "{SHA}" + hashedVal;
-        guestModel.setPassword(hashedVal);
-        Guest guest = this.guestServiceImpl.addGuest(guestModel,hashedVal);
-        model.addAttribute(GUEST, guest);
-        request.setAttribute(View.RESPONSE_STATUS_ATTRIBUTE, HttpStatus.TEMPORARY_REDIRECT);
-        return new ModelAndView("redirect:/guests/" + guest.getId());
+        @ModelAttribute GuestModel guestModel) {
+        return guestService.addGuest(request, model, guestModel);
     }
 
     @GetMapping(value = "/guests/{id}")
     @PreAuthorize("hasRole('ROLE_USER')")
-    public String getGuest(Model model, @PathVariable ObjectId id) {
-        Guest guest = this.guestServiceImpl.getGuest(id);
-        model.addAttribute(GUEST, guest);
-        return GUESTVIEW;
+    public String getGuest(Model model, @PathVariable Long id) {
+        return guestService.getGuest(model, id);
     }
 
     @PostMapping(value = "/guests/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public String updateGuest(Model model, @PathVariable ObjectId id, @ModelAttribute GuestModel guestModel) {
-        String hashedVal = Base64.getEncoder().encodeToString(DigestUtils.sha1(guestModel.getPassword().getBytes(Charset.forName("UTF-8"))));
-        hashedVal = "{SHA}" + hashedVal;
-        guestModel.setPassword(hashedVal);
-        this.guestServiceImpl.updateGuest(id, guestModel,hashedVal);
-        model.addAttribute(GUEST, null);
-        model.addAttribute("guestModel", new GuestModel());
-        return GUESTVIEW;
+    public String updateGuest(Model model, @PathVariable Long id, @ModelAttribute GuestModel guestModel) {
+        return guestService.updateGuest(model, id, guestModel);
     }
 
     @DeleteMapping(value = "/guests/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public String deleteGuest(@PathVariable ObjectId id) {
-        this.guestServiceImpl.deleteGuest(id);
-        return "guests-view";
+    public String deleteGuest(@PathVariable Long id) {
+        return guestService.deleteGuest(id);
     }
 }

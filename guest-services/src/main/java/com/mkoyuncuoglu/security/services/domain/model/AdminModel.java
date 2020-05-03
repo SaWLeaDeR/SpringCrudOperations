@@ -1,8 +1,7 @@
 package com.mkoyuncuoglu.security.services.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mkoyuncuoglu.security.services.domain.model.dto.AdminUser;
-
-import java.util.List;
 
 public class AdminModel {
 
@@ -14,7 +13,7 @@ public class AdminModel {
     private String gender;
     private String state;
     private String job;
-    private List<String> hobbies;
+    private String hobbies;
     private String education;
     private String userPassword;
 
@@ -82,11 +81,11 @@ public class AdminModel {
         this.job = job;
     }
 
-    public List<String> getHobbies() {
+    public String getHobbies() {
         return hobbies;
     }
 
-    public void setHobbies(List<String> hobbies) {
+    public void setHobbies(String hobbies) {
         this.hobbies = hobbies;
     }
 
@@ -106,6 +105,7 @@ public class AdminModel {
         this.userPassword = userPassword;
     }
 
+    @JsonIgnore
     public AdminUser translateModelToAdminUser() {
         AdminUser adminUser = new AdminUser();
         adminUser.setUserName(this.userName);
@@ -116,7 +116,7 @@ public class AdminModel {
         adminUser.setGender(this.gender);
         adminUser.setState(this.state);
         adminUser.setJob(this.job);
-        adminUser.setHobbies(this.hobbies.get(0));
+        adminUser.setHobbies(this.hobbies);
         adminUser.setEducation(this.education);
         adminUser.setUserPassword(this.userPassword);
         return adminUser;

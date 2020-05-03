@@ -1,92 +1,96 @@
 package com.mkoyuncuoglu.security.app.domain.service.impl;
 
 
+import com.mkoyuncuoglu.security.app.delegate.model.AdminModel;
+import com.mkoyuncuoglu.security.app.delegate.service.AdminUserDelegateService;
+import com.mkoyuncuoglu.security.app.domain.crypto.PasswordEncode;
 import com.mkoyuncuoglu.security.app.domain.model.dto.AdminUser;
 import com.mkoyuncuoglu.security.app.domain.service.AdminUserService;
-import com.mkoyuncuoglu.security.app.delegate.model.AdminModel;
-import com.mkoyuncuoglu.security.app.domain.repository.GroupRepository;
-import com.mkoyuncuoglu.security.app.domain.repository.PersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-
+import com.mkoyuncuoglu.security.app.domain.service.GroupService;
+import com.mkoyuncuoglu.security.app.domain.service.PersonService;
 import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
 
 @Service
 public class AdminUserServiceImpl implements AdminUserService {
 
-    private static final String ADMINS = "/admins";
+    private static final String ADMIN_VIEW = "admin-view";
+    private static final String ADMINS_VIEW = "admins-view";
     private static final String ADMIN = "admin";
     private static final String USER = "user";
-    private static final String SLASH = "/";
-    @Autowired
-    private PersonRepository personRepository;
-    @Autowired
-    private GroupRepository groupRepository;
 
-    @Value("${landon.guest.service.url}")
-    private String adminServiceUrl;
+    private final PersonService personService;
+    private final GroupService groupService;
+    private final AdminUserDelegateService adminUserDelegateService;
+    private final PasswordEncode encoder;
 
-    @Autowired
-    private final RestTemplate restTemplate;
-
-    public AdminUserServiceImpl(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public AdminUserServiceImpl(PersonService personService, GroupService groupService, AdminUserDelegateService adminUserDelegateService,
+        PasswordEncode encoder) {
+        this.personService = personService;
+        this.groupService = groupService;
+        this.adminUserDelegateService = adminUserDelegateService;
+        this.encoder = encoder;
     }
 
     @Override
-    public List<AdminUser> getAllAdminUser() {
-        String url = adminServiceUrl + ADMINS;
-        HttpEntity<String> request = new HttpEntity<>(null, null);
-        return this.restTemplate.exchange(url, HttpMethod.GET, request, new ParameterizedTypeReference<List<AdminUser>>() {
-        }).getBody();
+    public String getAdminUsers(Model model) {
+        List<AdminUser> admins = adminUserDelegateService.getAllAdminUser();
+        model.addAttribute("admins", admins);
+        return ADMINS_VIEW;
     }
 
     @Override
-    public AdminUser addAdminUser(AdminModel adminModel, String hashedVal) {
-        AdminUser adminuser = adminModel.translateModelToAdminUser(hashedVal);
-        personRepository.create(adminuser);
-        groupRepository.addMemberToGroup(ADMIN, adminuser);
-        groupRepository.addMemberToGroup(USER, adminuser);
-        String url = adminServiceUrl + ADMINS;
-        HttpEntity<AdminModel> request = new HttpEntity<>(adminModel, null);
-        return this.restTemplate.exchange(url, HttpMethod.POST, request, AdminUser.class).getBody();
+    public ModelAndView addAdminUser(HttpServletRequest request, Model model, AdminModel adminModel) {
+        String encryptedPass = encoder.encode(adminModel.getUserPassword());
+        adminModel.setUserPassword(encryptedPass);
+
+        AdminUser admin = adminModel.translateModelToAdminUser(encryptedPass);
+        personService.create(admin);
+        applyAdminGroup(admin);
+        model.addAttribute(ADMIN, admin);
+        request.setAttribute(View.RESPONSE_STATUS_ATTRIBUTE, HttpStatus.TEMPORARY_REDIRECT);
+        return new ModelAndView("redirect:/admins/" + admin.getId());
     }
 
     @Override
-    public AdminUser getAdminUser(String id) {
-        String url = adminServiceUrl + ADMINS + SLASH + id;
-        HttpEntity<String> request = new HttpEntity<>(null, null);
-        return this.restTemplate.exchange(url, HttpMethod.GET, request, AdminUser.class).getBody();
+    public String getAdminUser(Model model, Long id) {
+        AdminUser adminUser = adminUserDelegateService.getAdminUser(id);
+        model.addAttribute(ADMIN, adminUser);
+        return ADMIN_VIEW;
     }
 
     @Override
-    public AdminUser updateAdminUser(String id, AdminModel adminModel, String hashedVal) {
-        personRepository.delete(adminModel.translateModelToAdminUser(hashedVal));
-        groupRepository.removeMemberFromGroup(ADMIN, adminModel.translateModelToAdminUser(hashedVal));
-        groupRepository.removeMemberFromGroup(USER, adminModel.translateModelToAdminUser(hashedVal));
+    public String updateAdminUser(Model model, Long id, AdminModel adminModel) {
+        String encryptedPass = encoder.encode(adminModel.getUserPassword());
+        adminModel.setUserPassword(encryptedPass);
 
-        String url = adminServiceUrl + ADMINS + SLASH + id;
-        personRepository.create(adminModel.translateModelToAdminUser(hashedVal));
-        groupRepository.addMemberToGroup(ADMIN, adminModel.translateModelToAdminUser(hashedVal));
-        groupRepository.addMemberToGroup(USER, adminModel.translateModelToAdminUser(hashedVal));
+        personService.delete(adminModel.translateModelToAdminUser(encryptedPass));
+        groupService.removeMemberFromGroup(ADMIN, adminModel.translateModelToAdminUser(encryptedPass));
+        groupService.removeMemberFromGroup(USER, adminModel.translateModelToAdminUser(encryptedPass));
+        personService.create(adminModel.translateModelToAdminUser(encryptedPass));
 
-        HttpEntity<AdminModel> request = new HttpEntity<>(adminModel, null);
-        return this.restTemplate.exchange(url, HttpMethod.PUT, request, AdminUser.class).getBody();
+        applyAdminGroup(adminModel.translateModelToAdminUser(encryptedPass));
+
+        adminUserDelegateService.updateAdminUser(id, adminModel);
+
+        model.addAttribute(ADMIN, null);
+        model.addAttribute("adminModel", new AdminModel());
+        return ADMIN_VIEW;
     }
 
     @Override
-    public void deleteAdminUser(String id) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        String url = adminServiceUrl + ADMINS + SLASH + id;
-        HttpEntity<AdminModel> request = new HttpEntity<>(headers);
-        restTemplate.exchange(url, HttpMethod.DELETE, request, Void.class, 101);
+    public String deleteAdminUser(Long id) {
+        adminUserDelegateService.deleteAdminUser(id);
+        return ADMINS_VIEW;
+    }
+
+    private void applyAdminGroup(AdminUser adminuser) {
+        groupService.addMemberToGroup(ADMIN, adminuser);
+        groupService.addMemberToGroup(USER, adminuser);
     }
 }

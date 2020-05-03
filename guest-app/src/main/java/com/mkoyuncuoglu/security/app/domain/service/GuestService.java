@@ -1,19 +1,21 @@
 package com.mkoyuncuoglu.security.app.domain.service;
 
-import com.mkoyuncuoglu.security.app.domain.model.dto.Guest;
 import com.mkoyuncuoglu.security.app.delegate.model.GuestModel;
-import org.bson.types.ObjectId;
-
-import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.ui.Model;
+import org.springframework.web.servlet.ModelAndView;
 
 public interface GuestService {
-    List<Guest> getAllGuests();
 
-    Guest addGuest(GuestModel guestModel, String hashedVal);
+    String getGuests(Model model);
 
-    Guest getGuest(ObjectId id);
+    ModelAndView addGuest(HttpServletRequest request, Model model,
+        GuestModel guestModel);
 
-    Guest updateGuest(ObjectId id, GuestModel guestModel,String hashedVal);
+    String getGuest(Model model, Long id);
 
-    void deleteGuest(ObjectId id);
+    String updateGuest(Model model, Long id, GuestModel guestModel);
+
+    String deleteGuest(Long id);
+
 }

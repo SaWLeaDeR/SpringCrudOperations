@@ -1,8 +1,10 @@
 package com.mkoyuncuoglu.security.services.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mkoyuncuoglu.security.services.domain.model.dto.Guest;
 
 public class GuestModel {
+
     private String userName;
     private String firstName;
     private String lastName;
@@ -14,8 +16,8 @@ public class GuestModel {
     private String password;
 
     public GuestModel(String userName, String firstName, String lastName,
-                      String emailAddress, String address, String country,
-                      String state, String phoneNumber, String password) {
+        String emailAddress, String address, String country,
+        String state, String phoneNumber, String password) {
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -99,6 +101,7 @@ public class GuestModel {
         this.password = password;
     }
 
+    @JsonIgnore
     public Guest translateModelToGuest() {
         Guest guest = new Guest();
         guest.setFirstName(this.firstName);

@@ -28,33 +28,33 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .ldapAuthentication()
-                .userDnPatterns("uid={0},ou=people")
-                .groupSearchBase("ou=groups")
-                .authoritiesMapper(authoritiesMapper())
-                .contextSource()
-                .url("ldap://localhost:389/dc=frankmoley,dc=com")
-                .and()
-                .passwordCompare()
-                .passwordEncoder(new LdapShaPasswordEncoder())
-                .passwordAttribute("userPassword");
+            .ldapAuthentication()
+            .userDnPatterns("uid={0},ou=people")
+            .groupSearchBase("ou=groups")
+            .authoritiesMapper(authoritiesMapper())
+            .contextSource()
+            .url("ldap://localhost:389/dc=frankmoley,dc=com")
+            .and()
+            .passwordCompare()
+            .passwordEncoder(new LdapShaPasswordEncoder())
+            .passwordAttribute("userPassword");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/", "/index", "/css/*", "/js/*").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                .loginPage("/login").permitAll()
-                .and()
-                .logout().invalidateHttpSession(true)
-                .clearAuthentication(true)
-                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                .logoutSuccessUrl("/logout-success").permitAll();
+            .csrf().disable()
+            .authorizeRequests()
+            .antMatchers("/", "/index", "/css/*", "/js/*").permitAll()
+            .anyRequest().authenticated()
+            .and()
+            .formLogin()
+            .loginPage("/login").permitAll()
+            .and()
+            .logout().invalidateHttpSession(true)
+            .clearAuthentication(true)
+            .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+            .logoutSuccessUrl("/logout-success").permitAll();
     }
 
 }

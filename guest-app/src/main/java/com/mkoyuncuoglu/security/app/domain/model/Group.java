@@ -1,27 +1,13 @@
 package com.mkoyuncuoglu.security.app.domain.model;
 
-import javax.naming.Name;
 import java.util.HashSet;
 import java.util.Set;
+import javax.naming.Name;
 
 public class Group {
 
-
     private String name;
     private Set<Name> members;
-
-    public Group() {
-    }
-
-    public Group(String name, Set<Name> members) {
-        this.name = name;
-        this.members = members;
-    }
-
-    public Group(Name dn, String name, Set<Name> members) {
-        this.name = name;
-        this.members = members;
-    }
 
     public Set<Name> getMembers() {
         return members;
@@ -40,7 +26,7 @@ public class Group {
     }
 
     public void addMember(Name member) {
-        if (this.members == null){
+        if (this.members == null) {
             this.members = new HashSet<>();
         }
         members.add(member);
@@ -53,8 +39,8 @@ public class Group {
     @Override
     public String toString() {
         return "Group{" +
-                "name='" + name + '\'' +
-                ", members=" + members +
-                '}';
+            "name='" + name + '\'' +
+            ", members=" + members +
+            '}';
     }
 }

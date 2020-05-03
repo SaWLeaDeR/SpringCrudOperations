@@ -41,7 +41,6 @@ public class GuestServiceImpl implements GuestService {
     public void updateGuest(Long id, @Valid Guest guest) {
         guest.setId(id);
         repository.save(guest);
-
     }
 
     @Override

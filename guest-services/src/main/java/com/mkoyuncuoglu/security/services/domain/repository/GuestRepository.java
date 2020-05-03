@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface GuestRepository extends CrudRepository<Guest, Long> {
+
     @Override
     List<Guest> findAll();
 }
